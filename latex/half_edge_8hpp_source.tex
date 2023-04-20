@@ -1,0 +1,26 @@
+\hypertarget{half_edge_8hpp_source}{}\doxysection{half\+Edge.\+hpp}
+\mbox{\hyperlink{half_edge_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ HALFEDGE\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ HALFEDGE\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{vertex_8hpp}{vertex.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{face_8hpp}{face.hpp}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_face}{Face}};}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_vertex}{Vertex}};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classhalf_edge}{halfEdge}}\{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ declaring\ the\ required\ attributes\ for\ the\ halfedge\ class}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *start,\ *end;}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{classhalf_edge}{halfEdge}}\ *next,\ *prev,\ *twin;}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_face}{Face}}\ *face;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{classhalf_edge}{halfEdge}}(\mbox{\hyperlink{class_vertex}{Vertex}}\ *s,\ \mbox{\hyperlink{class_vertex}{Vertex}}\ *e);}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ HALFEDGE\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

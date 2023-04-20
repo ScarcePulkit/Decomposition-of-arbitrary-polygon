@@ -1,0 +1,255 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}dcel.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vertex.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}face.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}halfedge.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_point}{Point}}
+\begin{DoxyCompactList}\small\item\em This is the point class which stores the x,y coordinates and id of the point. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_rect}{Rect}}
+\begin{DoxyCompactList}\small\item\em This is the rectangle class, and it creates a rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a8cda3c359c9a97fad87cfcbd79d3fa3e}{in}}(n)
+\item 
+\mbox{\Hypertarget{main_8cpp_a8e7b6a92f58a7032f4ff4682d10024bb}\label{main_8cpp_a8e7b6a92f58a7032f4ff4682d10024bb}} 
+\#define {\bfseries sz}(x)~static\+\_\+cast$<$int$>$(x.\+size())
+\item 
+\mbox{\Hypertarget{main_8cpp_a49bc164f30e64702250d2cbea09bf86c}\label{main_8cpp_a49bc164f30e64702250d2cbea09bf86c}} 
+\#define {\bfseries dbg}(x)~cerr $<$$<$ \#x $<$$<$ \char`\"{}-\/$>$\char`\"{} $<$$<$ x $<$$<$ \char`\"{}\textbackslash{}n\char`\"{}
+\item 
+\#define \mbox{\hyperlink{main_8cpp_ac2356f0bb1d1820f037b749488bfb375}{prnt}}(x)
+\item 
+\#define \mbox{\hyperlink{main_8cpp_abe08efbd716d02fd199a1ee2b6eb50d8}{prntp}}(x)
+\item 
+\mbox{\Hypertarget{main_8cpp_a8091c2bcff55cbe0a4a145fd5fb7c22d}\label{main_8cpp_a8091c2bcff55cbe0a4a145fd5fb7c22d}} 
+\#define {\bfseries FAST}~cin.\+tie(0)-\/$>$sync\+\_\+with\+\_\+stdio(0);
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{main_8cpp_a2a80046dfe19722ee5d1f73b13708770}{Cross\+Product}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ \&A)
+\item 
+\mbox{\hyperlink{class_rect}{Rect}} $\ast$ \mbox{\hyperlink{main_8cpp_a8e245db993f0272846b7d84e68a58a81}{gen\+Rect}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ L)
+\item 
+double \mbox{\hyperlink{main_8cpp_a5739047d03b707d83cbc7e4191123efa}{Cross\+ProductV}} (vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ \&A)
+\item 
+vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ \mbox{\hyperlink{main_8cpp_a4d05067e984b67f26f058f879b3cd316}{is\+Notch}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ points)
+\item 
+\mbox{\hyperlink{class_point}{Point}} $\ast$ \mbox{\hyperlink{main_8cpp_afc135732ff7a34e4344525d301ff8d14}{next\+Point}} (std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ points, \mbox{\hyperlink{class_point}{Point}} $\ast$P)
+\item 
+vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ \mbox{\hyperlink{main_8cpp_ad8b67b265e53f65fb1efea7cfb42e889}{reduceL}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$L, \mbox{\hyperlink{class_point}{Point}} $\ast$v)
+\item 
+vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ \mbox{\hyperlink{main_8cpp_a06a36d28dc19ea4644f9905f060597bb}{find\+LPVS}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ points, vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ L)
+\item 
+void \mbox{\hyperlink{main_8cpp_a0ea28706d398c1e6f090cc3474631923}{solve}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ points)
+\item 
+void \mbox{\hyperlink{main_8cpp_af83efac84259a29bcfacc223b0187d18}{assignface}} (\mbox{\hyperlink{classhalf_edge}{half\+Edge}} $\ast$h, \mbox{\hyperlink{class_face}{Face}} $\ast$f)
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_a71867e609034d4dbd6d0ad8d84540e59}\label{main_8cpp_a71867e609034d4dbd6d0ad8d84540e59}} 
+int {\bfseries g} = 1
+\item 
+\mbox{\Hypertarget{main_8cpp_a9dc2f4c146406e067a948a22131c5e4f}\label{main_8cpp_a9dc2f4c146406e067a948a22131c5e4f}} 
+vector$<$ vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ $>$ {\bfseries poly}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8cpp_a8cda3c359c9a97fad87cfcbd79d3fa3e}\label{main_8cpp_a8cda3c359c9a97fad87cfcbd79d3fa3e}} 
+\index{main.cpp@{main.cpp}!in@{in}}
+\index{in@{in}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{in}{in}}
+{\footnotesize\ttfamily \#define in(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{double}\ n;\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ cin\ >>\ n;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8cpp_ac2356f0bb1d1820f037b749488bfb375}\label{main_8cpp_ac2356f0bb1d1820f037b749488bfb375}} 
+\index{main.cpp@{main.cpp}!prnt@{prnt}}
+\index{prnt@{prnt}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{prnt}{prnt}}
+{\footnotesize\ttfamily \#define prnt(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ cerr\ <<\ \#x\ <<\ \textcolor{charliteral}{'\{'};\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ for\ (\textcolor{keyword}{auto}\ T\ :\ x)\ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cerr\ <<\ T\ <<\ \textcolor{charliteral}{'\ '};\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8cpp_abe08efbd716d02fd199a1ee2b6eb50d8}\label{main_8cpp_abe08efbd716d02fd199a1ee2b6eb50d8}} 
+\index{main.cpp@{main.cpp}!prntp@{prntp}}
+\index{prntp@{prntp}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{prntp}{prntp}}
+{\footnotesize\ttfamily \#define prntp(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ cerr\ <<\ \#x\ <<\ \textcolor{charliteral}{'\{'};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ for\ (\textcolor{keyword}{auto}\ T\ :\ x)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cerr\ <<\ T.first\ <<\ \textcolor{charliteral}{'-\/'}\ <<\ T.second\ <<\ \textcolor{charliteral}{'\ '};\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_af83efac84259a29bcfacc223b0187d18}\label{main_8cpp_af83efac84259a29bcfacc223b0187d18}} 
+\index{main.cpp@{main.cpp}!assignface@{assignface}}
+\index{assignface@{assignface}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{assignface()}{assignface()}}
+{\footnotesize\ttfamily void assignface (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classhalf_edge}{half\+Edge}} $\ast$}]{h,  }\item[{\mbox{\hyperlink{class_face}{Face}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+This function assigns a face to all the half edges of the face. 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classhalf_edge}{half\+Edge}}} & $\ast$h -\/ a half edge \\
+\hline
+{\em \mbox{\hyperlink{class_face}{Face}}} & $\ast$f -\/ a face \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a2a80046dfe19722ee5d1f73b13708770}\label{main_8cpp_a2a80046dfe19722ee5d1f73b13708770}} 
+\index{main.cpp@{main.cpp}!CrossProduct@{CrossProduct}}
+\index{CrossProduct@{CrossProduct}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{CrossProduct()}{CrossProduct()}}
+{\footnotesize\ttfamily double Cross\+Product (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ \&}]{A }\end{DoxyParamCaption})}
+
+This function calculates the cross product of two vectors. 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Point} & $\ast$\texorpdfstring{$>$}{>} \&A -\/ a vector of points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a5739047d03b707d83cbc7e4191123efa}\label{main_8cpp_a5739047d03b707d83cbc7e4191123efa}} 
+\index{main.cpp@{main.cpp}!CrossProductV@{CrossProductV}}
+\index{CrossProductV@{CrossProductV}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{CrossProductV()}{CrossProductV()}}
+{\footnotesize\ttfamily double Cross\+ProductV (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ \&}]{A }\end{DoxyParamCaption})}
+
+This function calculates the cross product of two vectors. 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Vertex} & $\ast$\texorpdfstring{$>$}{>} \&A -\/ a vector of vertices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a06a36d28dc19ea4644f9905f060597bb}\label{main_8cpp_a06a36d28dc19ea4644f9905f060597bb}} 
+\index{main.cpp@{main.cpp}!findLPVS@{findLPVS}}
+\index{findLPVS@{findLPVS}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{findLPVS()}{findLPVS()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ find\+LPVS (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$}]{points,  }\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$}]{L }\end{DoxyParamCaption})}
+
+This function finds the points that are notches and are not in L. Thus finding the LPVS. 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Point} & $\ast$\texorpdfstring{$>$}{>} points -\/ a vector of points \\
+\hline
+{\em vector$<$\+Point} & $\ast$\texorpdfstring{$>$}{>} L -\/ a vector of points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Point $\ast$$>$
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a8e245db993f0272846b7d84e68a58a81}\label{main_8cpp_a8e245db993f0272846b7d84e68a58a81}} 
+\index{main.cpp@{main.cpp}!genRect@{genRect}}
+\index{genRect@{genRect}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{genRect()}{genRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rect}{Rect}} $\ast$ gen\+Rect (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$}]{L }\end{DoxyParamCaption})}
+
+This function generates a rectangle with the leftmost, rightmost, topmost and bottommost points. 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Point} & $\ast$\texorpdfstring{$>$}{>} L -\/ a vector of points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_rect}{Rect}} $\ast$
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a4d05067e984b67f26f058f879b3cd316}\label{main_8cpp_a4d05067e984b67f26f058f879b3cd316}} 
+\index{main.cpp@{main.cpp}!isNotch@{isNotch}}
+\index{isNotch@{isNotch}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{isNotch()}{isNotch()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ is\+Notch (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$}]{points }\end{DoxyParamCaption})}
+
+This function return the notches in the vector of points. 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Point} & $\ast$\texorpdfstring{$>$}{>} points -\/ a vector of points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Point $\ast$$>$
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is the main function. First it takes the input from the input.\+txt file in clockwise order. Then it calls the solve function to solve the problem. Then it prints the output to the output.\+txt file of the decomposition. Now it performs merging of the faces if possible. Then it prints the output to the output.\+txt file of the decomposition and returns the result of the final polygon decomposition. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_afc135732ff7a34e4344525d301ff8d14}\label{main_8cpp_afc135732ff7a34e4344525d301ff8d14}} 
+\index{main.cpp@{main.cpp}!nextPoint@{nextPoint}}
+\index{nextPoint@{nextPoint}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{nextPoint()}{nextPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} $\ast$ next\+Point (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$}]{points,  }\item[{\mbox{\hyperlink{class_point}{Point}} $\ast$}]{P }\end{DoxyParamCaption})}
+
+This function finds the next point of the point P in the vector points. 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Point} & $\ast$\texorpdfstring{$>$}{>} points -\/ a vector of points \\
+\hline
+{\em \mbox{\hyperlink{class_point}{Point}}} & $\ast$P -\/ a point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_point}{Point}} $\ast$
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ad8b67b265e53f65fb1efea7cfb42e889}\label{main_8cpp_ad8b67b265e53f65fb1efea7cfb42e889}} 
+\index{main.cpp@{main.cpp}!reduceL@{reduceL}}
+\index{reduceL@{reduceL}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{reduceL()}{reduceL()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ reduceL (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$}]{L,  }\item[{\mbox{\hyperlink{class_point}{Point}} $\ast$}]{v }\end{DoxyParamCaption})}
+
+This function reduces the vector L points to make it a valid convex polygon. 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Point$\ast$$>$L} & -\/ a vector of points \\
+\hline
+{\em Point$\ast$} & v -\/ a point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Point$\ast$$>$
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a0ea28706d398c1e6f090cc3474631923}\label{main_8cpp_a0ea28706d398c1e6f090cc3474631923}} 
+\index{main.cpp@{main.cpp}!solve@{solve}}
+\index{solve@{solve}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily void solve (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$}]{points }\end{DoxyParamCaption})}
+
+This function solves the problem. It converts the polygon into a different convex polygons. It also finds the bounding box of each polygon. Then return the final set of faces after decomposition. 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Point} & $\ast$\texorpdfstring{$>$}{>} points -\/ a vector of points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}

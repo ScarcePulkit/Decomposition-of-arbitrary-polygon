@@ -1,0 +1,152 @@
+\hypertarget{class_dcel}{}\doxysection{Dcel Class Reference}
+\label{class_dcel}\index{Dcel@{Dcel}}
+
+
+This is the \mbox{\hyperlink{class_dcel}{Dcel}} class which \`{}stores the vertices, faces and half edges. It has functions to add a vertex, half edge and face. It has functions to traverse the face and polygon.  
+
+
+
+
+{\ttfamily \#include $<$dcel.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_dcel_af4d7cde19dcebfaaac5a2747fbc6bf14}{add\+Vertex}} (double xx, double yy, int id)
+\item 
+void \mbox{\hyperlink{class_dcel_a3201e938cd1afd787ef962d17f1a0ddf}{addhalf\+Edge}} (\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$s, \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$t)
+\item 
+void \mbox{\hyperlink{class_dcel_a1bd389e07db2e7f05d562a1a8c786513}{add\+Face}} (\mbox{\hyperlink{classhalf_edge}{half\+Edge}} $\ast$he)
+\item 
+void \mbox{\hyperlink{class_dcel_ad9d3628198bba3d9112e545ee2335154}{traverse\+Face}} (\mbox{\hyperlink{class_face}{Face}} $\ast$f)
+\item 
+void \mbox{\hyperlink{class_dcel_a2fceb1306377c9e894259b2390702ac6}{traverse\+Face2}} (\mbox{\hyperlink{classhalf_edge}{half\+Edge}} $\ast$h)
+\item 
+void \mbox{\hyperlink{class_dcel_a1f768542e17ae11e500c2d0723401644}{traverse\+Poly}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dcel_aa423d8837fcb6a464d9878dfb331e3dc}\label{class_dcel_aa423d8837fcb6a464d9878dfb331e3dc}} 
+vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ {\bfseries vertices}
+\item 
+\mbox{\Hypertarget{class_dcel_acb5fadbf0d20628b68959419fa51a7df}\label{class_dcel_acb5fadbf0d20628b68959419fa51a7df}} 
+vector$<$ \mbox{\hyperlink{class_face}{Face}} $\ast$ $>$ {\bfseries faces}
+\item 
+\mbox{\Hypertarget{class_dcel_a88a833f4de38861f28f45b5166ba5a78}\label{class_dcel_a88a833f4de38861f28f45b5166ba5a78}} 
+vector$<$ \mbox{\hyperlink{classhalf_edge}{half\+Edge}} $\ast$ $>$ {\bfseries edges}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the \mbox{\hyperlink{class_dcel}{Dcel}} class which \`{}stores the vertices, faces and half edges. It has functions to add a vertex, half edge and face. It has functions to traverse the face and polygon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Vertex} & $\ast$\texorpdfstring{$>$}{>} vertices -\/ a vector of vertices \\
+\hline
+{\em vector$<$\+Face} & $\ast$\texorpdfstring{$>$}{>} faces -\/ a vector of faces \\
+\hline
+{\em vector$<$half\+Edge} & $\ast$\texorpdfstring{$>$}{>} edges -\/ a vector of half edges \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dcel_a1bd389e07db2e7f05d562a1a8c786513}\label{class_dcel_a1bd389e07db2e7f05d562a1a8c786513}} 
+\index{Dcel@{Dcel}!addFace@{addFace}}
+\index{addFace@{addFace}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{addFace()}{addFace()}}
+{\footnotesize\ttfamily void Dcel\+::add\+Face (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classhalf_edge}{half\+Edge}} $\ast$}]{he }\end{DoxyParamCaption})}
+
+This function adds a face to the \mbox{\hyperlink{class_dcel}{Dcel}} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classhalf_edge}{half\+Edge}}} & $\ast$he -\/ half edge \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+NULL
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dcel_a3201e938cd1afd787ef962d17f1a0ddf}\label{class_dcel_a3201e938cd1afd787ef962d17f1a0ddf}} 
+\index{Dcel@{Dcel}!addhalfEdge@{addhalfEdge}}
+\index{addhalfEdge@{addhalfEdge}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{addhalfEdge()}{addhalfEdge()}}
+{\footnotesize\ttfamily void Dcel\+::addhalf\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{s,  }\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{t }\end{DoxyParamCaption})}
+
+This function adds a half edge to the \mbox{\hyperlink{class_dcel}{Dcel}} 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_vertex}{Vertex}}} & $\ast$s -\/ starting vertex \\
+\hline
+{\em \mbox{\hyperlink{class_vertex}{Vertex}}} & $\ast$t -\/ ending vertex \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+NULL
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dcel_af4d7cde19dcebfaaac5a2747fbc6bf14}\label{class_dcel_af4d7cde19dcebfaaac5a2747fbc6bf14}} 
+\index{Dcel@{Dcel}!addVertex@{addVertex}}
+\index{addVertex@{addVertex}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{addVertex()}{addVertex()}}
+{\footnotesize\ttfamily void Dcel\+::add\+Vertex (\begin{DoxyParamCaption}\item[{double}]{xx,  }\item[{double}]{yy,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+This function adds a vertex to the \mbox{\hyperlink{class_dcel}{Dcel}} 
+\begin{DoxyParams}{Parameters}
+{\em double} & xx -\/ a double \\
+\hline
+{\em double} & yy -\/ a double \\
+\hline
+{\em int} & id -\/ an integer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+NULL
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dcel_ad9d3628198bba3d9112e545ee2335154}\label{class_dcel_ad9d3628198bba3d9112e545ee2335154}} 
+\index{Dcel@{Dcel}!traverseFace@{traverseFace}}
+\index{traverseFace@{traverseFace}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{traverseFace()}{traverseFace()}}
+{\footnotesize\ttfamily void Dcel\+::traverse\+Face (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_face}{Face}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+This function traverses a specific face of the polygon with given face. 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_face}{Face}}} & $\ast$f -\/ a face \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+NULL
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dcel_a2fceb1306377c9e894259b2390702ac6}\label{class_dcel_a2fceb1306377c9e894259b2390702ac6}} 
+\index{Dcel@{Dcel}!traverseFace2@{traverseFace2}}
+\index{traverseFace2@{traverseFace2}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{traverseFace2()}{traverseFace2()}}
+{\footnotesize\ttfamily void Dcel\+::traverse\+Face2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classhalf_edge}{half\+Edge}} $\ast$}]{h }\end{DoxyParamCaption})}
+
+This function traverses a specific face on a given half edge. 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classhalf_edge}{half\+Edge}}} & $\ast$h -\/ a half edge \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+NULL
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dcel_a1f768542e17ae11e500c2d0723401644}\label{class_dcel_a1f768542e17ae11e500c2d0723401644}} 
+\index{Dcel@{Dcel}!traversePoly@{traversePoly}}
+\index{traversePoly@{traversePoly}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{traversePoly()}{traversePoly()}}
+{\footnotesize\ttfamily void Dcel\+::traverse\+Poly (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function traverses all the faces of the polygon. 
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+NULL
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{dcel_8hpp}{dcel.\+hpp}}\item 
+dcel.\+cpp\item 
+\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

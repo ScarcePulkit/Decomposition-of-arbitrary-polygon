@@ -1,0 +1,259 @@
+\hypertarget{mar20_8cpp}{}\doxysection{mar20.\+cpp File Reference}
+\label{mar20_8cpp}\index{mar20.cpp@{mar20.cpp}}
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_vertex}{Vertex}}
+\begin{DoxyCompactList}\small\item\em is the vertex class that stores the x,y coordinates and id of the vertex \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classhalf_edge}{half\+Edge}}
+\begin{DoxyCompactList}\small\item\em This is the half edge class which stores the starting and ending vertex. One can find the next half edge, previous half edge and twin half edge. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_face}{Face}}
+\begin{DoxyCompactList}\small\item\em This is the face class which stores the half edge, boolean and integer. Given an edge of the face, one can traverse the face. Boolean is used to check if the face is valid or not. Integer is used to assign a unique id to each face. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_point}{Point}}
+\begin{DoxyCompactList}\small\item\em This is the point class which stores the x,y coordinates and id of the point. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_dcel}{Dcel}}
+\begin{DoxyCompactList}\small\item\em This is the \mbox{\hyperlink{class_dcel}{Dcel}} class which \`{}stores the vertices, faces and half edges. It has functions to add a vertex, half edge and face. It has functions to traverse the face and polygon. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_rect}{Rect}}
+\begin{DoxyCompactList}\small\item\em This is the rectangle class, and it creates a rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mar20_8cpp_a8cda3c359c9a97fad87cfcbd79d3fa3e}{in}}(n)
+\item 
+\mbox{\Hypertarget{mar20_8cpp_a8e7b6a92f58a7032f4ff4682d10024bb}\label{mar20_8cpp_a8e7b6a92f58a7032f4ff4682d10024bb}} 
+\#define {\bfseries sz}(x)~static\+\_\+cast$<$int$>$(x.\+size())
+\item 
+\mbox{\Hypertarget{mar20_8cpp_a49bc164f30e64702250d2cbea09bf86c}\label{mar20_8cpp_a49bc164f30e64702250d2cbea09bf86c}} 
+\#define {\bfseries dbg}(x)~cerr $<$$<$ \#x $<$$<$ \char`\"{}-\/$>$\char`\"{} $<$$<$ x $<$$<$ \char`\"{}\textbackslash{}n\char`\"{}
+\item 
+\#define \mbox{\hyperlink{mar20_8cpp_ac2356f0bb1d1820f037b749488bfb375}{prnt}}(x)
+\item 
+\#define \mbox{\hyperlink{mar20_8cpp_abe08efbd716d02fd199a1ee2b6eb50d8}{prntp}}(x)
+\item 
+\mbox{\Hypertarget{mar20_8cpp_a8091c2bcff55cbe0a4a145fd5fb7c22d}\label{mar20_8cpp_a8091c2bcff55cbe0a4a145fd5fb7c22d}} 
+\#define {\bfseries FAST}~cin.\+tie(0)-\/$>$sync\+\_\+with\+\_\+stdio(0);
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{mar20_8cpp_a2a80046dfe19722ee5d1f73b13708770}{Cross\+Product}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ \&A)
+\item 
+\mbox{\hyperlink{class_rect}{Rect}} $\ast$ \mbox{\hyperlink{mar20_8cpp_a8e245db993f0272846b7d84e68a58a81}{gen\+Rect}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ L)
+\item 
+double \mbox{\hyperlink{mar20_8cpp_a5739047d03b707d83cbc7e4191123efa}{Cross\+ProductV}} (vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ \&A)
+\item 
+vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ \mbox{\hyperlink{mar20_8cpp_a4d05067e984b67f26f058f879b3cd316}{is\+Notch}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ points)
+\item 
+\mbox{\hyperlink{class_point}{Point}} $\ast$ \mbox{\hyperlink{mar20_8cpp_afc135732ff7a34e4344525d301ff8d14}{next\+Point}} (std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ points, \mbox{\hyperlink{class_point}{Point}} $\ast$P)
+\item 
+vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ \mbox{\hyperlink{mar20_8cpp_ad8b67b265e53f65fb1efea7cfb42e889}{reduceL}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$L, \mbox{\hyperlink{class_point}{Point}} $\ast$v)
+\item 
+vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ \mbox{\hyperlink{mar20_8cpp_a06a36d28dc19ea4644f9905f060597bb}{find\+LPVS}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ points, vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ L)
+\item 
+void \mbox{\hyperlink{mar20_8cpp_a0ea28706d398c1e6f090cc3474631923}{solve}} (vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ points)
+\item 
+void \mbox{\hyperlink{mar20_8cpp_af83efac84259a29bcfacc223b0187d18}{assignface}} (\mbox{\hyperlink{classhalf_edge}{half\+Edge}} $\ast$h, \mbox{\hyperlink{class_face}{Face}} $\ast$f)
+\item 
+int \mbox{\hyperlink{mar20_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mar20_8cpp_a71867e609034d4dbd6d0ad8d84540e59}\label{mar20_8cpp_a71867e609034d4dbd6d0ad8d84540e59}} 
+int {\bfseries g} = 1
+\item 
+\mbox{\Hypertarget{mar20_8cpp_a9dc2f4c146406e067a948a22131c5e4f}\label{mar20_8cpp_a9dc2f4c146406e067a948a22131c5e4f}} 
+vector$<$ vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ $>$ {\bfseries poly}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mar20_8cpp_a8cda3c359c9a97fad87cfcbd79d3fa3e}\label{mar20_8cpp_a8cda3c359c9a97fad87cfcbd79d3fa3e}} 
+\index{mar20.cpp@{mar20.cpp}!in@{in}}
+\index{in@{in}!mar20.cpp@{mar20.cpp}}
+\doxysubsubsection{\texorpdfstring{in}{in}}
+{\footnotesize\ttfamily \#define in(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{double}\ n;\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ cin\ >>\ n;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{mar20_8cpp_ac2356f0bb1d1820f037b749488bfb375}\label{mar20_8cpp_ac2356f0bb1d1820f037b749488bfb375}} 
+\index{mar20.cpp@{mar20.cpp}!prnt@{prnt}}
+\index{prnt@{prnt}!mar20.cpp@{mar20.cpp}}
+\doxysubsubsection{\texorpdfstring{prnt}{prnt}}
+{\footnotesize\ttfamily \#define prnt(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ cerr\ <<\ \#x\ <<\ \textcolor{charliteral}{'\{'};\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ for\ (\textcolor{keyword}{auto}\ T\ :\ x)\ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cerr\ <<\ T\ <<\ \textcolor{charliteral}{'\ '};\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{mar20_8cpp_abe08efbd716d02fd199a1ee2b6eb50d8}\label{mar20_8cpp_abe08efbd716d02fd199a1ee2b6eb50d8}} 
+\index{mar20.cpp@{mar20.cpp}!prntp@{prntp}}
+\index{prntp@{prntp}!mar20.cpp@{mar20.cpp}}
+\doxysubsubsection{\texorpdfstring{prntp}{prntp}}
+{\footnotesize\ttfamily \#define prntp(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ cerr\ <<\ \#x\ <<\ \textcolor{charliteral}{'\{'};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ for\ (\textcolor{keyword}{auto}\ T\ :\ x)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cerr\ <<\ T.first\ <<\ \textcolor{charliteral}{'-\/'}\ <<\ T.second\ <<\ \textcolor{charliteral}{'\ '};\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mar20_8cpp_af83efac84259a29bcfacc223b0187d18}\label{mar20_8cpp_af83efac84259a29bcfacc223b0187d18}} 
+\index{mar20.cpp@{mar20.cpp}!assignface@{assignface}}
+\index{assignface@{assignface}!mar20.cpp@{mar20.cpp}}
+\doxysubsubsection{\texorpdfstring{assignface()}{assignface()}}
+{\footnotesize\ttfamily void assignface (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classhalf_edge}{half\+Edge}} $\ast$}]{h,  }\item[{\mbox{\hyperlink{class_face}{Face}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+This function assigns a face to all the half edges of the face 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classhalf_edge}{half\+Edge}}} & $\ast$h -\/ a half edge \\
+\hline
+{\em \mbox{\hyperlink{class_face}{Face}}} & $\ast$f -\/ a face \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\mbox{\Hypertarget{mar20_8cpp_a2a80046dfe19722ee5d1f73b13708770}\label{mar20_8cpp_a2a80046dfe19722ee5d1f73b13708770}} 
+\index{mar20.cpp@{mar20.cpp}!CrossProduct@{CrossProduct}}
+\index{CrossProduct@{CrossProduct}!mar20.cpp@{mar20.cpp}}
+\doxysubsubsection{\texorpdfstring{CrossProduct()}{CrossProduct()}}
+{\footnotesize\ttfamily double Cross\+Product (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ \&}]{A }\end{DoxyParamCaption})}
+
+This function calculates the cross product of two vectors 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Point} & $\ast$\texorpdfstring{$>$}{>} \&A -\/ a vector of points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double
+\end{DoxyReturn}
+\mbox{\Hypertarget{mar20_8cpp_a5739047d03b707d83cbc7e4191123efa}\label{mar20_8cpp_a5739047d03b707d83cbc7e4191123efa}} 
+\index{mar20.cpp@{mar20.cpp}!CrossProductV@{CrossProductV}}
+\index{CrossProductV@{CrossProductV}!mar20.cpp@{mar20.cpp}}
+\doxysubsubsection{\texorpdfstring{CrossProductV()}{CrossProductV()}}
+{\footnotesize\ttfamily double Cross\+ProductV (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ \&}]{A }\end{DoxyParamCaption})}
+
+This function calculates the cross product of two vectors 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Vertex} & $\ast$\texorpdfstring{$>$}{>} \&A -\/ a vector of vertices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double
+\end{DoxyReturn}
+\mbox{\Hypertarget{mar20_8cpp_a06a36d28dc19ea4644f9905f060597bb}\label{mar20_8cpp_a06a36d28dc19ea4644f9905f060597bb}} 
+\index{mar20.cpp@{mar20.cpp}!findLPVS@{findLPVS}}
+\index{findLPVS@{findLPVS}!mar20.cpp@{mar20.cpp}}
+\doxysubsubsection{\texorpdfstring{findLPVS()}{findLPVS()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ find\+LPVS (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$}]{points,  }\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$}]{L }\end{DoxyParamCaption})}
+
+This function finds the points that are notches and are not in L 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Point} & $\ast$\texorpdfstring{$>$}{>} points -\/ a vector of points \\
+\hline
+{\em vector$<$\+Point} & $\ast$\texorpdfstring{$>$}{>} L -\/ a vector of points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Point $\ast$$>$
+\end{DoxyReturn}
+\mbox{\Hypertarget{mar20_8cpp_a8e245db993f0272846b7d84e68a58a81}\label{mar20_8cpp_a8e245db993f0272846b7d84e68a58a81}} 
+\index{mar20.cpp@{mar20.cpp}!genRect@{genRect}}
+\index{genRect@{genRect}!mar20.cpp@{mar20.cpp}}
+\doxysubsubsection{\texorpdfstring{genRect()}{genRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rect}{Rect}} $\ast$ gen\+Rect (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$}]{L }\end{DoxyParamCaption})}
+
+This function generates a rectangle 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Point} & $\ast$\texorpdfstring{$>$}{>} L -\/ a vector of points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_rect}{Rect}} $\ast$
+\end{DoxyReturn}
+\mbox{\Hypertarget{mar20_8cpp_a4d05067e984b67f26f058f879b3cd316}\label{mar20_8cpp_a4d05067e984b67f26f058f879b3cd316}} 
+\index{mar20.cpp@{mar20.cpp}!isNotch@{isNotch}}
+\index{isNotch@{isNotch}!mar20.cpp@{mar20.cpp}}
+\doxysubsubsection{\texorpdfstring{isNotch()}{isNotch()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ is\+Notch (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$}]{points }\end{DoxyParamCaption})}
+
+This function checks if a point is a notch 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Point} & $\ast$\texorpdfstring{$>$}{>} points -\/ a vector of points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Point $\ast$$>$
+\end{DoxyReturn}
+\mbox{\Hypertarget{mar20_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{mar20_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{mar20.cpp@{mar20.cpp}!main@{main}}
+\index{main@{main}!mar20.cpp@{mar20.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is the main function 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mar20_8cpp_afc135732ff7a34e4344525d301ff8d14}\label{mar20_8cpp_afc135732ff7a34e4344525d301ff8d14}} 
+\index{mar20.cpp@{mar20.cpp}!nextPoint@{nextPoint}}
+\index{nextPoint@{nextPoint}!mar20.cpp@{mar20.cpp}}
+\doxysubsubsection{\texorpdfstring{nextPoint()}{nextPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} $\ast$ next\+Point (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$}]{points,  }\item[{\mbox{\hyperlink{class_point}{Point}} $\ast$}]{P }\end{DoxyParamCaption})}
+
+This function finds the next point 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Point} & $\ast$\texorpdfstring{$>$}{>} points -\/ a vector of points \\
+\hline
+{\em \mbox{\hyperlink{class_point}{Point}}} & $\ast$P -\/ a point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_point}{Point}} $\ast$
+\end{DoxyReturn}
+\mbox{\Hypertarget{mar20_8cpp_ad8b67b265e53f65fb1efea7cfb42e889}\label{mar20_8cpp_ad8b67b265e53f65fb1efea7cfb42e889}} 
+\index{mar20.cpp@{mar20.cpp}!reduceL@{reduceL}}
+\index{reduceL@{reduceL}!mar20.cpp@{mar20.cpp}}
+\doxysubsubsection{\texorpdfstring{reduceL()}{reduceL()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$ reduceL (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$}]{L,  }\item[{\mbox{\hyperlink{class_point}{Point}} $\ast$}]{v }\end{DoxyParamCaption})}
+
+This function reduces the vector L points 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Point$\ast$$>$L} & -\/ a vector of points \\
+\hline
+{\em Point$\ast$} & v -\/ a point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Point$\ast$$>$
+\end{DoxyReturn}
+\mbox{\Hypertarget{mar20_8cpp_a0ea28706d398c1e6f090cc3474631923}\label{mar20_8cpp_a0ea28706d398c1e6f090cc3474631923}} 
+\index{mar20.cpp@{mar20.cpp}!solve@{solve}}
+\index{solve@{solve}!mar20.cpp@{mar20.cpp}}
+\doxysubsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily void solve (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_point}{Point}} $\ast$ $>$}]{points }\end{DoxyParamCaption})}
+
+This function solves the problem. MP1 implementation. 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Point} & $\ast$\texorpdfstring{$>$}{>} points -\/ a vector of points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
